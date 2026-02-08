@@ -1,6 +1,6 @@
 import { config } from 'dotenv';
 import { TwitterApi } from 'twitter-api-v2';
-import { logger } from './utils/logger';
+import { logger } from '../utils/logger';
 
 async function main() {
   // Load environment variables
@@ -10,7 +10,7 @@ async function main() {
     // Test with Bearer Token (App-only auth)
     logger.info('Testing Bearer Token authentication...');
     const bearerClient = new TwitterApi(process.env.TWITTER_BEARER_TOKEN!);
-    
+
     // This should work with bearer token
     const user = await bearerClient.v2.userByUsername('btb_finance');
     logger.info('Bearer token works! User info:', {

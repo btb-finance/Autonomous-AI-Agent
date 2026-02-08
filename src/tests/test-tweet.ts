@@ -1,9 +1,9 @@
 import { config } from 'dotenv';
-import { TwitterService } from './services/TwitterService';
-import { OpenRouterService } from './services/OpenRouterService';
-import { KnowledgeBaseService } from './services/KnowledgeBaseService';
-import { loadConfig } from './config/config';
-import { logger } from './utils/logger';
+import { TwitterService } from '../services/TwitterService';
+import { OpenRouterService } from '../services/OpenRouterService';
+import { KnowledgeBaseService } from '../services/KnowledgeBaseService';
+import { loadConfig } from '../config/config';
+import { logger } from '../utils/logger';
 import * as path from 'path';
 
 async function sleep(ms: number) {
@@ -14,7 +14,7 @@ async function waitForRateLimit(resetTime: number): Promise<void> {
   const now = Date.now();
   const resetDate = new Date(resetTime * 1000);
   const waitTime = Math.max(0, resetDate.getTime() - now);
-  
+
   if (waitTime > 0 && waitTime < 900000) { // Only wait if less than 15 minutes
     logger.info(`Waiting for rate limit reset: ${Math.ceil(waitTime / 1000)} seconds until ${resetDate}`);
     await sleep(waitTime);

@@ -1,7 +1,7 @@
 import { config } from 'dotenv';
-import { TwitterService } from './services/TwitterService';
-import { loadConfig } from './config/config';
-import { logger } from './utils/logger';
+import { TwitterService } from '../services/TwitterService';
+import { loadConfig } from '../config/config';
+import { logger } from '../utils/logger';
 
 async function main() {
   // Load environment variables
@@ -19,15 +19,15 @@ async function main() {
 
   try {
     logger.info('Testing mention fetching...');
-    
+
     // Try to fetch mentions
     const response = await twitterService.getMentionsWithRateLimit();
-    
+
     logger.info(`Successfully fetched mentions:`, {
       count: response.mentions.length,
       rateLimit: response.rateLimit
     });
-    
+
     if (response.mentions.length > 0) {
       logger.info('First mention:', response.mentions[0]);
     } else {

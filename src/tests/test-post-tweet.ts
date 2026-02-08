@@ -1,7 +1,7 @@
 import { config } from 'dotenv';
-import { TwitterService } from './services/TwitterService';
-import { loadConfig } from './config/config';
-import { logger } from './utils/logger';
+import { TwitterService } from '../services/TwitterService';
+import { loadConfig } from '../config/config';
+import { logger } from '../utils/logger';
 
 async function main() {
   // Load environment variables
@@ -21,10 +21,10 @@ async function main() {
     // Test tweet - add timestamp to avoid duplicates
     const timestamp = new Date().toISOString();
     const testTweet = `Test tweet from BTB AI Agent - ${timestamp} #BTB`;
-    
+
     logger.info('Attempting to post tweet...');
     const tweetId = await twitterService.postTweet(testTweet);
-    
+
     logger.info(`Successfully posted tweet! Tweet ID: ${tweetId}`);
     logger.info(`View tweet at: https://twitter.com/i/web/status/${tweetId}`);
   } catch (error) {

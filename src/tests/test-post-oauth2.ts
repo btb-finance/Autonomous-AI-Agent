@@ -1,6 +1,6 @@
 import { config } from 'dotenv';
 import { TwitterApi } from 'twitter-api-v2';
-import { logger } from './utils/logger';
+import { logger } from '../utils/logger';
 
 async function main() {
   // Load environment variables
@@ -30,7 +30,7 @@ async function main() {
 
     // Alternative: Try with app-only authentication (limited functionality)
     const appOnlyClient = new TwitterApi(process.env.TWITTER_BEARER_TOKEN!);
-    
+
     logger.info('\nTrying to get user info with app-only auth...');
     const user = await appOnlyClient.v2.userByUsername('btb_finance');
     logger.info('User info retrieved:', {

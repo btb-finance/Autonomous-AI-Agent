@@ -16,9 +16,9 @@ An intelligent Twitter bot that monitors mentions of $BTB, provides information 
 
 ## Prerequisites
 
-- Node.js v16 or higher
-- npm or yarn
-- Twitter Developer Account with API access
+- Node.js v18 or higher
+- npm, yarn, or bun
+- X (Twitter) Developer Account with API access (Basic tier recommended)
 - OpenRouter API account
 - Git
 
@@ -161,12 +161,21 @@ This will fetch the latest mentions of your account.
 └── package.json          # Project dependencies
 ```
 
-## Twitter API Limits
+## X (Twitter) API Limits (2026)
 
-Be aware of Twitter API rate limits:
-- **Free tier**: 500 posts/month, limited read access
-- **Basic tier**: 10,000 posts/month
-- **Pro tier**: 1,000,000 posts/month
+Be aware of X API pricing tiers:
+
+| Tier | Cost | Read Limit | Post Limit |
+|------|------|------------|------------|
+| **Free** | $0 | Minimal | 1,500 tweets/month |
+| **Basic** | $100/mo | 10,000 tweets/month | 3,000 tweets/month |
+| **Pro** | $5,000/mo | 1,000,000 tweets/month | Full access |
+| **Enterprise** | Custom | Unlimited | Revenue-sharing model |
+
+> **2026 Updates:**
+> - Pay-as-you-go beta available (Nov 2025)
+> - Enterprise tier moved to revenue-sharing (July 2025)
+> - v1.1 API endpoints deprecated
 
 The bot includes automatic rate limit handling and will pause when limits are reached.
 

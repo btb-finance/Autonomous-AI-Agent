@@ -96,8 +96,9 @@ pids
 .eslintcache
 
 # Knowledge base and data files
-knowledge_base/*.txt
-!knowledge_base/example.txt
+# knowledge_base/*.txt  # Commented out - we want to track btb_info.txt
+data/*.json
+!data/example.json
 data/*.json
 !data/example.json
 

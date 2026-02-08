@@ -1,0 +1,38 @@
+# BTB Finance Knowledge Base
+
+## About BTB Finance
+BTB Finance is a decentralized finance (DeFi) protocol focused on providing innovative yield optimization and liquidity solutions.
+
+## Key Features
+- **Automated Yield Optimization**: Smart contract-based strategies for maximizing returns
+- **Liquidity Provision**: Efficient LP management and staking mechanisms  
+- **Zero Inflation**: Sustainable tokenomics with no inflationary emissions
+- **veNFT Governance**: Vote-escrow NFTs for protocol governance and fee sharing
+
+## Token: $BTB
+- **Symbol**: BTB
+- **Type**: Governance and utility token
+- **Use Cases**: Governance voting, fee sharing, staking rewards
+
+## Links
+- **Website**: https://btb.finance
+- **Twitter**: @btb_finance
+- **Telegram**: https://t.me/BTBFinance
+- **Docs**: https://docs.btb.finance
+
+## FAQ
+
+### What is BTB Finance?
+BTB Finance is a DeFi protocol that provides automated yield optimization and liquidity solutions with sustainable tokenomics.
+
+### How do I earn with BTB?
+You can earn by providing liquidity, staking $BTB tokens, or participating in governance through veNFT positions.
+
+### Is BTB Finance audited?
+Please refer to our documentation for the latest security audits and reviews.
+
+### Where can I buy $BTB?
+$BTB is available on decentralized exchanges. Check our website for the latest trading pairs and contract addresses.
+
+---
+*Last updated: February 2026*

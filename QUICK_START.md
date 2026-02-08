@@ -4,8 +4,8 @@ Get the BTB Finance AI Bot running in 5 minutes!
 
 ## 1. Prerequisites Checklist ✅
 
-- [ ] Node.js v16+ installed
-- [ ] Twitter Developer account
+- [ ] Node.js v18+ installed
+- [ ] X (Twitter) Developer account (Basic tier $100/mo recommended)
 - [ ] OpenRouter account with API key
 - [ ] Git installed
 
